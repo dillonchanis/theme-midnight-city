@@ -1,0 +1,22 @@
+{
+    "name": "midnight-city",
+    "displayName": "Midnight City",
+    "description": "A cool outrun style theme.",
+    "version": "0.0.1",
+    "publisher": "Dillon Chanis",
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Midnight City",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Midnight City-color-theme.json"
+            }
+        ]
+    }
+}
