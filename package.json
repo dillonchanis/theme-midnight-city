@@ -1,9 +1,15 @@
 {
     "name": "midnight-city",
     "displayName": "Midnight City",
-    "description": "A cool outrun style theme.",
+    "description": "A cool dark outrun style theme.",
     "version": "0.0.1",
     "publisher": "Dillon Chanis",
+    "scripts": {
+		"dev": "node ./scripts/dev.js",
+		"build": "node ./scripts/build.js",
+		"lint": "node ./scripts/lint.js",
+		"vscode:prepublish": "npm run build"
+	},
     "engines": {
         "vscode": "^1.32.0"
     },
@@ -18,5 +24,10 @@
                 "path": "./themes/Midnight City-color-theme.json"
             }
         ]
+    },
+    "devDependencies": {
+        "js-yaml": "3.13.0",
+        "prettier": "1.16.4",
+        "tinycolor2": "1.4.1"
     }
 }

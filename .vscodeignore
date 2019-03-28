@@ -1,4 +1,8 @@
+src/**
+.editorconfig
+node_modules
+build.js
+.github/*
 .vscode/**
-.vscode-test/**
-.gitignore
-vsc-extension-quickstart.md
+bootstrap.sh
+known_issues.md
