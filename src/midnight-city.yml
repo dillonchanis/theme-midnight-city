@@ -1,21 +1,24 @@
 name: Midnight City
 author: Dillon Chanis
 maintainers:
-  - Dillon Chanis <dillonchanis92@gmail.com>
+  - Dillon Chanis
+  - Brodey Newman
 semanticClass: theme.midnight-city
 midnight-city:
   base:
-    - &BG        '#282A36'
-    - &FG        '#F8F8F2'
-    - &SELECTION '#44475A'
+    - &BG        '#0D011E'
+    - &FG        '#FFFFD8'
+    - &SELECTION '#250e47'
     - &COMMENT   '#6272A4'
-    - &CYAN      '#8BE9FD'
+    - &CYAN      '#2BDCFF'
+    - &LIGHTCYAN '#BDF3FF'
     - &GREEN     '#50FA7B'
-    - &ORANGE    '#FFB86C'
-    - &PINK      '#FF79C6'
+    - &ORANGE    '#FD947C'
+    - &PINK      '#FF78B1'
+    - &LIGHTPINK '#FFC4E8'
     - &PURPLE    '#BD93F9'
-    - &RED       '#FF5555'
-    - &YELLOW    '#F1FA8C'
+    - &RED       '#FD1D53'
+    - &YELLOW    '#FFFA50'
   ansi:
     - &COLOR0        '#21222C'
     - &COLOR1        '#FF5555'
@@ -43,10 +46,10 @@ midnight-city:
     - &WHITE         '#FFFFFF'
     - &TAB_DROP_BG   '#44475A70'
     # UI Variants
-    - &BGLighter     '#424450'
-    - &BGLight       '#343746' # HSV (230   , 25.71, 27.45)
-    - &BGDark        '#21222C' # HSV (234.55, 25   , 17.25)
-    - &BGDarker      '#191A21' # HSV (234.55, 25   , 13   )
+    - &BGLighter     '#0D011E'
+    - &BGLight       '#0D011E'
+    - &BGDark        '#0D011E'
+    - &BGDarker      '#0D011E'
 
 # User Interface (more info: https://code.visualstudio.com/docs/getstarted/theme-color-reference)
 colors:
@@ -174,6 +177,7 @@ colors:
   editor.foreground: *FG
   editor.background: *BG
   editorLineNumber.foreground: *COMMENT
+  editorLineNumber.activeForeground: *PINK
   editorCursor.foreground:
 
   editor.selectionBackground: *SELECTION                                        # Color of the editor selection
@@ -190,7 +194,7 @@ colors:
   editor.hoverHighlightBackground: *BGDarker                                    # Highlight below the word for which a hover is shown
 
   editor.lineHighlightBackground:                                               # Background color for the highlight of line at the cursor position
-  editor.lineHighlightBorder: *SELECTION                                        # Background color for the border around the line at the cursor position
+  editor.lineHighlightBorder: '#361766'                                        # Background color for the border around the line at the cursor position
 
   editorLink.activeForeground: *CYAN                                            # Color of active links
   editor.rangeHighlightBackground: !alpha [ *PURPLE, 15 ]                       # Background color of highlighted ranges, like by Quick Open and Find features
@@ -201,8 +205,8 @@ colors:
   editor.snippetFinalTabstopHighlightBorder: *GREEN                             # Highlight border color of the final tabstop of a snippet
 
   editorWhitespace.foreground: *NonText                                         # Color of whitespace characters in the editor
-  editorIndentGuide.background: *NonText                                        # Color of the editor indentation guides
-  editorIndentGuide.activeBackground: !alpha [ *WHITE, 45]                      # Color of the active indentation guide
+  editorIndentGuide.background: !alpha [ *PURPLE, 90 ]                                        # Color of the editor indentation guides
+  editorIndentGuide.activeBackground: !alpha [ *PINK, 90]                      # Color of the active indentation guide
   editorRuler.foreground: *NonText                                              # Color of the editor rulers
 
   editorCodeLens.foreground: *COMMENT                                           # Foreground color of an editor CodeLens
@@ -502,7 +506,7 @@ tokenColors:
     - string.other.link.description
     - string.other.link.title
     settings:
-      foreground: *PINK
+      foreground: *CYAN
 
   - name: Blockquotes (prose)
     scope:
@@ -602,26 +606,26 @@ tokenColors:
     - comment.block.documentation keyword
     - comment.block.documentation storage.type.class
     settings:
-      foreground: *PINK
+      foreground: !alpha [ *PINK, 90 ]
 
   - name: JSDoc-style types
     scope:
     - comment.block.documentation entity.name.type
     settings:
-      foreground: *CYAN
+      foreground: !alpha [ *CYAN, 90 ]
       fontStyle: italic
 
   - name: JSDoc-style type brackets
     scope:
     - comment.block.documentation entity.name.type punctuation.definition.bracket
     settings:
-      foreground: *CYAN
+      foreground: !alpha [ *CYAN, 90 ]
 
   - name: JSDoc-style comment parameters
     scope:
     - comment.block.documentation variable
     settings:
-      foreground: *ORANGE
+      foreground: !alpha [ *YELLOW, 90 ]
       fontStyle: italic
 
 # =============================================================================
@@ -651,7 +655,7 @@ tokenColors:
     scope:
     - entity.name.tag
     settings:
-      foreground: *PINK
+      foreground: *PURPLE
 
   - name: CSS attribute parent selectors ('&')
     scope:
@@ -663,7 +667,7 @@ tokenColors:
     scope:
     - entity.other.attribute-name
     settings:
-      foreground: *GREEN
+      foreground: *LIGHTPINK
       fontStyle: italic
 
 # =============================================================================
@@ -682,7 +686,7 @@ tokenColors:
     - support.function.any-method.lua
     - keyword.operator.function.infix
     settings:
-      foreground: *GREEN
+      foreground: *CYAN
 
   - name: Function parameters
     scope:
@@ -719,7 +723,7 @@ tokenColors:
     - keyword
     - punctuation.definition.keyword
     settings:
-      foreground: *PINK
+      foreground: *ORANGE
 
   - name: Keyword "new"
     scope:
@@ -813,7 +817,7 @@ tokenColors:
     - string.template meta.brace
     - string.template punctuation.accessor
     settings:
-      foreground: *FG
+      foreground: !alpha [ *YELLOW, 90 ]
 
   - name: Variable interpolation operators
     scope:
@@ -829,7 +833,7 @@ tokenColors:
     - punctuation.section.embedded.end source.ruby # Issue with ruby's tmLanguage
     - punctuation.definition.variable.makefile
     settings:
-      foreground: *PINK
+      foreground: *LIGHTCYAN
 
 # =============================================================================
 # Serializable / Config Langages
@@ -971,7 +975,7 @@ tokenColors:
     scope:
     - string
     settings:
-      foreground: *YELLOW
+      foreground: *LIGHTCYAN
 
   - name: String quotes (temporary vscode fix)
     scope:
@@ -1012,7 +1016,7 @@ tokenColors:
     - variable.other.constant.ts  # Fixes incorrect highlighting of pseudo-constants in ts
     - variable.other.constant.tsx # Fixes incorrect highlighting of pseudo-constants in tsx
     settings:
-      foreground: *FG
+      foreground: *LIGHTPINK
 
   - name: Destructuring / aliasing reference name (LHS)
     scope:
