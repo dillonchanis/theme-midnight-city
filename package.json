@@ -18,12 +18,17 @@
     ],
     "contributes": {
         "themes": [
-            {
-                "label": "Midnight City",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Midnight City-color-theme.json"
-            }
-        ]
+			{
+				"label": "Midnight City",
+				"uiTheme": "vs-dark",
+				"path": "./theme/midnight-city.json"
+			},
+			{
+				"label": "Midnight City Soft",
+				"uiTheme": "vs-dark",
+				"path": "./theme/midnight-city-soft.json"
+			}
+		]
     },
     "devDependencies": {
         "js-yaml": "3.13.0",
