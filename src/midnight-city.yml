@@ -725,6 +725,12 @@ tokenColors:
     settings:
       foreground: *ORANGE
 
+  - name: Keywords
+    scope:
+      keyword.control.elixir
+    settings:
+      foreground: *PINK
+
   - name: Keyword "new"
     scope:
     - keyword.control.new
