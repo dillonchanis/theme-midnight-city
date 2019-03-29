@@ -2,7 +2,9 @@
 
 Midnight City is a dark Visual Studio Code theme inspired by Outrun/Synthwave color vibes.
 
-![Splash](splash.jpg)
+<p align="center">
+  <img width="600" src="splash.jpg">
+</p>
 
 # Installation
 
