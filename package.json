@@ -6,11 +6,11 @@
     "publisher": "dillonchanis",
     "license": "MIT",
     "scripts": {
-		"dev": "node ./scripts/dev.js",
-		"build": "node ./scripts/build.js",
-		"lint": "node ./scripts/lint.js",
-		"vscode:prepublish": "npm run build"
-	},
+        "dev": "node ./scripts/dev.js",
+        "build": "node ./scripts/build.js",
+        "lint": "node ./scripts/lint.js",
+        "vscode:prepublish": "npm run build"
+    },
     "engines": {
         "vscode": "^1.32.0"
     },
@@ -22,26 +22,26 @@
         "Brodey Newman"
     ],
     "repository": {
-		"type": "git",
-		"url": "https://github.com/dillonchanis/theme-midnight-city"
+        "type": "git",
+        "url": "https://github.com/dillonchanis/theme-midnight-city"
     },
     "bugs": {
         "url": "https://github.com/dillonchanis/theme-midnight-city/issues"
     },
     "contributes": {
         "themes": [
-			{
-				"label": "Midnight City",
-				"uiTheme": "vs-dark",
-				"path": "./theme/midnight-city.json"
-			}
-		]
+            {
+                "label": "Midnight City",
+                "uiTheme": "vs-dark",
+                "path": "./theme/midnight-city.json"
+            }
+        ]
     },
     "icon": "icon.png",
     "galleryBanner": {
-		"color": "#0D011E",
-		"theme": "dark"
-	},
+        "color": "#0D011E",
+        "theme": "dark"
+    },
     "keywords": [
         "midnight city",
         "midnight",
@@ -53,7 +53,7 @@
         "theme"
     ],
     "devDependencies": {
-        "js-yaml": "3.13.0",
+        "js-yaml": ">=3.13.1",
         "prettier": "1.16.4",
         "tinycolor2": "1.4.1"
     }
