@@ -8,7 +8,7 @@ midnight-city:
   base:
     - &BG        '#0D011E'
     - &FG        '#FFFFD8'
-    - &SELECTION '#250e47'
+    - &SELECTION '#e63b9a'
     - &COMMENT   '#6272A4'
     - &CYAN      '#2BDCFF'
     - &LIGHTCYAN '#BDF3FF'
@@ -46,7 +46,7 @@ midnight-city:
     - &WHITE         '#FFFFFF'
     - &TAB_DROP_BG   '#44475A70'
     # UI Variants
-    - &BGLighter     '#0D011E'
+    - &BGLighter     '#443858'
     - &BGLight       '#0D011E'
     - &BGDark        '#0D011E'
     - &BGDarker      '#0D011E'
