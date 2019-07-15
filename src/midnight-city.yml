@@ -8,7 +8,7 @@ midnight-city:
   base:
     - &BG        '#0D011E'
     - &FG        '#FFFFD8'
-    - &SELECTION '#e63b9a'
+    - &SELECTION '#3f2680'
     - &COMMENT   '#6272A4'
     - &CYAN      '#2BDCFF'
     - &LIGHTCYAN '#BDF3FF'
