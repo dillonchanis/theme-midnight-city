@@ -364,10 +364,10 @@ colors:
   settings.checkboxBackground:         *PURPLE                                  # Checkbox background
   settings.checkboxForeground:         *FG                                      # Checkbox foreground
   settings.checkboxBorder:             *BGDarker                                # Checkbox border
-  settings.textInputBackground:        *BGDark                                  # Text input box background
+  settings.textInputBackground:        *PURPLE                                  # Text input box background
   settings.textInputForeground:        *FG                                      # Text input box foreground
   settings.textInputBorder:            *BGDarker                                # Text input box border
-  settings.numberInputBackground:      *BGDark                                  # Number input box background
+  settings.numberInputBackground:      *PURPLE                                  # Number input box background
   settings.numberInputForeground:      *FG                                      # Number input box foreground
   settings.numberInputBorder:          *BGDarker                                # Number input box border
 
