@@ -113,9 +113,9 @@ colors:
 
   # Scroll Bar Control
   scrollbar.shadow:                                                             # Scroll Bar shadow to indicate that the view is scrolled
-  scrollbarSlider.activeBackground:                                             # Slider background color when active
-  scrollbarSlider.background:                                                   # Slider background color
-  scrollbarSlider.hoverBackground:                                              # Slider background color when hovering
+  scrollbarSlider.activeBackground: !alpha [*PURPLE, 60]                        # Slider background color when active
+  scrollbarSlider.background: !alpha [*SELECTION, 60]                           # Slider background color
+  scrollbarSlider.hoverBackground: !alpha [*PURPLE, 80]                         # Slider background color when hovering
 
   # Badge
   badge.foreground: *FG                                                         # Badge foreground color
@@ -125,7 +125,7 @@ colors:
   progressBar.background: *PINK                                                 # Background color of the progress bar shown for long running operations
 
   # List & Trees
-  list.activeSelectionBackground: *SELECTION                                    # List/Tree background color for the selected item when the list/tree is active
+  list.activeSelectionBackground: *PURPLE                                       # List/Tree background color for the selected item when the list/tree is active
   list.activeSelectionForeground: *FG                                           # List/Tree foreground color for the selected item when the list/tree is active
   list.dropBackground: *SELECTION                                               # List/Tree drag and drop background when moving items around using the mouse
   list.focusBackground: *LineHighlight                                          # List/Tree background color for the focused item when the list/tree is active
@@ -205,8 +205,8 @@ colors:
   editor.snippetFinalTabstopHighlightBorder: *GREEN                             # Highlight border color of the final tabstop of a snippet
 
   editorWhitespace.foreground: *NonText                                         # Color of whitespace characters in the editor
-  editorIndentGuide.background: !alpha [ *PURPLE, 90 ]                                        # Color of the editor indentation guides
-  editorIndentGuide.activeBackground: !alpha [ *PINK, 90]                      # Color of the active indentation guide
+  editorIndentGuide.background: !alpha [ *PURPLE, 90 ]                          # Color of the editor indentation guides
+  editorIndentGuide.activeBackground: !alpha [ *PINK, 90]                       # Color of the active indentation guide
   editorRuler.foreground: *NonText                                              # Color of the editor rulers
 
   editorCodeLens.foreground: *COMMENT                                           # Foreground color of an editor CodeLens
@@ -358,16 +358,16 @@ colors:
   settings.modifiedItemForeground:     *ORANGE                                  # The foreground color for a the modified setting indicator
   settings.modifiedItemIndicator:      *ORANGE                                  # The color of the line that indicates a modified setting
   settings.inactiveSelectedItemBorder:                                          # The color of the selected setting row border, when the settings list does not have focus
-  settings.dropdownBackground:         *BGDark                                  # Dropdown background
+  settings.dropdownBackground:         *PURPLE                                  # Dropdown background
   settings.dropdownForeground:         *FG                                      # Dropdown foreground
   settings.dropdownBorder:             *BGDarker                                # Dropdown border
-  settings.checkboxBackground:         *BGDark                                  # Checkbox background
+  settings.checkboxBackground:         *PURPLE                                  # Checkbox background
   settings.checkboxForeground:         *FG                                      # Checkbox foreground
   settings.checkboxBorder:             *BGDarker                                # Checkbox border
-  settings.textInputBackground:        *BGDark                                  # Text input box background
+  settings.textInputBackground:        *PURPLE                                  # Text input box background
   settings.textInputForeground:        *FG                                      # Text input box foreground
   settings.textInputBorder:            *BGDarker                                # Text input box border
-  settings.numberInputBackground:      *BGDark                                  # Number input box background
+  settings.numberInputBackground:      *PURPLE                                  # Number input box background
   settings.numberInputForeground:      *FG                                      # Number input box foreground
   settings.numberInputBorder:          *BGDarker                                # Number input box border
 
