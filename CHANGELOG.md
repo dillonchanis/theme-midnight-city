@@ -8,3 +8,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [0.2.0]
 - Updated selection colors to be more discernable
+
+## [0.4.0]
+- Updated scrollbar color as well as checkbox and inputs within settings for increased visibility. (Thanks @bustelyo)
