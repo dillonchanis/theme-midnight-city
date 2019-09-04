@@ -125,8 +125,8 @@ colors:
   progressBar.background: *PINK                                                 # Background color of the progress bar shown for long running operations
 
   # List & Trees
-  list.activeSelectionBackground: *PURPLE                                       # List/Tree background color for the selected item when the list/tree is active
-  list.activeSelectionForeground: *FG                                           # List/Tree foreground color for the selected item when the list/tree is active
+  list.activeSelectionBackground: *SELECTION                                    # List/Tree background color for the selected item when the list/tree is active
+  list.activeSelectionForeground: *COLOR15                                      # List/Tree foreground color for the selected item when the list/tree is active
   list.dropBackground: *SELECTION                                               # List/Tree drag and drop background when moving items around using the mouse
   list.focusBackground: *LineHighlight                                          # List/Tree background color for the focused item when the list/tree is active
   list.highlightForeground: *CYAN                                               # List/Tree foreground color of the match highlights when searching inside the list/tree
@@ -358,16 +358,16 @@ colors:
   settings.modifiedItemForeground:     *ORANGE                                  # The foreground color for a the modified setting indicator
   settings.modifiedItemIndicator:      *ORANGE                                  # The color of the line that indicates a modified setting
   settings.inactiveSelectedItemBorder:                                          # The color of the selected setting row border, when the settings list does not have focus
-  settings.dropdownBackground:         *PURPLE                                  # Dropdown background
+  settings.dropdownBackground:         *SELECTION                               # Dropdown background
   settings.dropdownForeground:         *FG                                      # Dropdown foreground
   settings.dropdownBorder:             *BGDarker                                # Dropdown border
-  settings.checkboxBackground:         *PURPLE                                  # Checkbox background
+  settings.checkboxBackground:         *SELECTION                               # Checkbox background
   settings.checkboxForeground:         *FG                                      # Checkbox foreground
   settings.checkboxBorder:             *BGDarker                                # Checkbox border
-  settings.textInputBackground:        *PURPLE                                  # Text input box background
+  settings.textInputBackground:        *SELECTION                               # Text input box background
   settings.textInputForeground:        *FG                                      # Text input box foreground
   settings.textInputBorder:            *BGDarker                                # Text input box border
-  settings.numberInputBackground:      *PURPLE                                  # Number input box background
+  settings.numberInputBackground:      *SELECTION                               # Number input box background
   settings.numberInputForeground:      *FG                                      # Number input box foreground
   settings.numberInputBorder:          *BGDarker                                # Number input box border
 
