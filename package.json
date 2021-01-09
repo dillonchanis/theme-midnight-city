@@ -6,10 +6,10 @@
     "publisher": "dillonchanis",
     "license": "MIT",
     "scripts": {
-        "dev": "node ./scripts/dev.js",
         "build": "node ./scripts/build.js",
         "lint": "node ./scripts/lint.js",
-        "vscode:prepublish": "npm run build"
+        "vscode:prepublish": "npm run build",
+        "vsce-publish": "vsce publish"
     },
     "engines": {
         "vscode": "^1.32.0"
@@ -18,8 +18,7 @@
         "Themes"
     ],
     "maintainers": [
-        "Dillon Chanis",
-        "Brodey Newman"
+        "Dillon Chanis"
     ],
     "repository": {
         "type": "git",
